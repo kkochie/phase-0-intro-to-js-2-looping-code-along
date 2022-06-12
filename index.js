@@ -1,26 +1,33 @@
-/*const gifts = ["teddy bear", "drone", "doll"];
+//for loop
+// for(let age = 30; age < 40; age++) {
+//     console.log(`I'm ${age} years old. Happy birthdy to me!`);
+// }
 
-function wrapGifts(gifts) {
-    for (let i=0; i < gifts.length; i++) {
-        console.log(`Wrapped ${gifts[i]} and added a bow!`);
-    }
+//for with Arrays
+// const gifts = ["teddy bear", "drone", "doll"];
 
-    return gifts;
-}
+// function wrapGifts(gifts) {
+//     for(let i=0; i < gifts.length; i++) {
+//         console.log(`Wrapped ${gifts[i]} and added a bow!`);
+//     }
+//     return gifts;
+// }
 
-wrapGifts(gifts);
-*/
+// wrapGifts(gifts);
 
 //Thank you card creator
-const messages = [];
-
-function writeCards(names, eventType) {
-    for (let i=0; i < names.length; i++) {
-        messages.push(`Thank you, ${names[i]}, for the lovely ${eventType} gift.`);
-    }
-    return messages;
+function writeCards(names, event) {
+ let cards = [];   
+ for(let i = 0; i < names.length; i++) {
+    cards.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
+ }
+ return cards;
 }
 
-writeCards(["Kristy", "Emmett", "Frida"], "birthday");
-
-console.log(messages);
+function countDown(startNumber) {
+    while(startNumber > 0) {
+        console.log(startNumber);
+        startNumber --;
+    }
+    console.log(startNumber);
+}
